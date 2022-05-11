@@ -4,13 +4,15 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styles: [
-  ]
+    `
+      .container {
+        margin: 1.5rem;
+      }
+    `,
+  ],
 })
 export class HomeComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

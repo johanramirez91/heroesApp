@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { MaterialModule } from './material/material.module';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AuthModule,
     HeroesModule,
     MaterialModule
