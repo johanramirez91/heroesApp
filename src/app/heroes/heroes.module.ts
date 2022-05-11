@@ -8,6 +8,7 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListaComponent } from './pages/lista/lista.component';
 import { HeroesRoutingModule } from './heroes-routing.module';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HeroesRoutingModule } from './heroes-routing.module';
     HeroeComponent,
     HomeComponent,
     ListaComponent,
+    HeroeTarjetaComponent,
   ],
   imports: [
     CommonModule,
