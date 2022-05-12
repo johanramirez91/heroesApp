@@ -5,13 +5,7 @@ import { Heroe } from '../../interfaces/heroes.interface';
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
-  styles: [
-    `
-      mat-card {
-        margin-top: 25;
-      }
-    `,
-  ],
+  styles: [],
 })
 export class ListaComponent implements OnInit {
   heroes: Heroe[] = [];
