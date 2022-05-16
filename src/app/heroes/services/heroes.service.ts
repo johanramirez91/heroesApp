@@ -24,4 +24,16 @@ export class HeroesService {
       `${this.baseURL}/heroes?q=${termino}&_limit=5`
     );
   }
+
+  saveHeroe(heroe: Heroe): Observable<Heroe> {
+    return this.hhtp.post<Heroe>(`${this.baseURL}/heroes`, heroe);
+  }
+
+  actualizaHeroe(heroe: Heroe): Observable<Heroe> {
+    return this.hhtp.put<Heroe>(`${this.baseURL}/heroes/${heroe.id}`, heroe);
+  }
+
+  deleteHeroe(id: string) {
+    return this.hhtp.delete(`${this.baseURL}/heroes/${id}`);
+  }
 }
