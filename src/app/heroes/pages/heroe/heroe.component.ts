@@ -10,7 +10,7 @@ import { HeroesService } from '../../services/heroes.service';
   styles: [
     `
       img {
-        width: 30%;
+        width: 100%;
         border-radius: 2rem;
       }
     `,
