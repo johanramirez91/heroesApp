@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { AuthService } from '../../../auth/services/auth.service';
 
 @Component({
@@ -23,6 +24,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
 
   logOut() {
-    this.router.navigate(['./auth/login']);
+    this.router.navigate(['./auth/login'], { skipLocationChange: true });
   }
 }
